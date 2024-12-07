@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>NLP</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">MeaningCloud</div>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form id="urlForm">
+                    <input id="name" type="text" name="url" placeholder="Enter URL" required>
+                    <button id="submitButton" type="submit">Submit</button>
+                </form>
+                
+            </section>
+
+            <section>
+                <strong>Form Results:</strong>
+                    <div id="results">
+                        <div id="agreement"></div>
+                        <div id="confidence"></div>
+                        <div id="irony"></div>
+                        <div id="subjectivity"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section class="FooterMiddle">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">Write to Us</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                </ul>
+            </section>
+        </footer>
+        <script>
+            // from udacity content https://learn.udacity.com/nanodegrees/nd0011-ilo/parts/cd0430/lessons/7e6cea7b-da40-467a-a9f5-fd571259e443/concepts/3a566cac-d452-4a6f-b4b8-60a6b148f3ea?_gl=1*hn1fna*_gcl_aw*R0NMLjE3MzIwNDQ2MDAuQ2owS0NRaUFpX0c1QmhEWEFSSXNBTjVTWDdybEJWdGEyV21fd2g3WGlyZ3owa2tzSk14LTVmdzlCc3JhWDRLM2JxSVYtel9iZmU2cFdfc2FBblMxRUFMd193Y0I.*_gcl_au*MTU2MTM0MzgwMy4xNzMwNzQ2ODMw*_ga*MTEyMzE3Nzk1Ni4xNzMwNzQ2ODQ5*_ga_CF22GKVCFK*MTczMjk2NTU4NC4zMi4xLjE3MzI5NjU2MDcuMzcuMC4w&lesson_tab=lesson
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>

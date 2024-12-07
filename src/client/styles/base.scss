@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #2b6777;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 2;
+    padding: 30px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+    section {
+      max-width: 800px;
+      margin: 50px auto;
+    }
+}
